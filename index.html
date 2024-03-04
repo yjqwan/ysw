@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf-8" name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>叶姥姥影视网</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				background-color: #f2f2f2;
+				padding: 0px 0px;
+				background-color: #ffffff;
+			}
+
+			header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px;
+				background-color: #f1f1f1;
+			}
+
+			/* 导航栏样式 */
+			nav {
+				background-color: #333;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				height: 70px;
+				overflow: hidden;
+			}
+
+			nav ul {
+				list-style-type: none;
+				display: flex;
+			}
+
+			nav ul li {
+				margin: 0 5px;
+				position: relative;
+			}
+
+			nav ul li::before {
+				content: $"";
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: #555;
+				opacity: 0.2;
+				transition: opacity 0.3s;
+			}
+
+			nav ul li:hover::before {
+				opacity: 1;
+			}
+
+			nav ul li a {
+				text-decoration: none;
+				color: white;
+				padding: 12px 15px;
+				display: block;
+				font-size: 15px;
+				font-weight: bold;
+			}
+
+			nav ul li a:hover {
+				background-color: #555;
+			}
+
+			.container {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-gap: 20px;
+				padding: 20px;
+			}
+
+			.movie {
+				text-align: center;
+			}
+
+			footer {
+				padding: 20px;
+				background-color: #f1f1f1;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="图标.PNG" alt="网站logo" width="40%">
+			<h1>叶姥姥影视网</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">全部</a></li>
+				<li><a href="index.html">推荐</a></li>
+				<li><a href="index.html">其他</a></li>
+				<li><a href="guanyu.html">关于</a></li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<!-- 示例影片 -->
+			<div class="movie">
+				<a href="dianying/鸡哥出世.html">
+					<img src="电影1.jpg" alt="电影1" width="70" height="101.4">
+					<h5>鸡哥出世</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/鸡哥大闹天宫.html">
+					<img src="电影2.jpg" alt="电影2" width="70" height="101.4">
+					<h5>鸡哥大闹天宫</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/西游记主题曲.html">
+					<img src="电影3.jpg" alt="电影3" width="70" height="101.4">
+					<h5>西游记主题曲</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/速度与鸡情1.html">
+					<img src="电影4.jpg" alt="电影4" width="70" height="101.4">
+					<h5>速度与鸡情</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/菜田趣事.html">
+					<img src="电影6.jpg" alt="电影6" width="70" height="101.4">
+					<h5>菜田趣事</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/搂席饭店.html">
+					<img src="电影7.jpg" alt="电影7" width="70" height="101.4">
+					<h5>搂席饭店</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/熊出没之整活虎兵.html">
+					<img src="电影8.jpg" alt="电影8" width="70" height="101.4">
+					<h5>熊出没之整活虎兵</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/周大福的魔力.html">
+					<img src="电影9.jpg" alt="电影9" width="70" height="101.4">
+					<h5>周大福的魔力</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/西游鸡.html">
+					<img src="电影10.jpg" alt="电影10" width="70" height="101.4">
+					<h5>西游鸡</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/天鸡预报.html">
+					<img src="电影11.jpg" alt="电影11" width="70" height="101.4">
+					<h5>天鸡预报</h5>
+				</a>
+			</div>
+			<div class="movie">
+				<a href="dianying/蔡徐坤新年.html">
+					<img src="电影12.jpg" alt="电影12" width="70" height="101.4">
+					<h5>蔡徐坤新年</h5>
+				</a>
+			</div>
+			<!-- 更多示例影片... -->
+		</div>
+		<footer>
+			版权所有 &copy; 2024 叶姥姥影视网
+		</footer>
+	</body>
+</html>
